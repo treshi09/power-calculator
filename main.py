@@ -1,11 +1,6 @@
 base = int(input("Enter the base number: "))
-exponent = int(input("Enter the power (exponent): "))
-
+exponent = int(input("Enter the exponent: "))
 result = 1
-count = 0
-
-while count < exponent:
+for i in range(exponent):
     result *= base
-    count += 1
-
 print(f"{base} raised to the power of {exponent} is: {result}")
